@@ -26,7 +26,14 @@
             grid-template-rows: repeat(auto-fit, 1fr);
             grid-template-columns: repeat(2, 1fr);
             gap: 8px;
-        }       
+        }
+        .charts {
+            padding: 4px;
+            display: inline-grid;
+            grid-template-rows: repeat(auto-fit, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
         </style>
     </head>
     <body>
@@ -772,6 +779,62 @@
                     ],
                     "colorTheme": "dark"
                 }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+        </section>
+
+        <section class="charts">
+            <div>
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div id="tradingview_7bdfd"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                    <script type="text/javascript">
+                    new TradingView.widget(
+                    {
+                    "width": 888,
+                    "height": 610,
+                    "symbol": "BINANCE:BTCBUSD",
+                    "interval": "240",
+                    "timezone": "Europe/Berlin",
+                    "theme": "dark",
+                    "style": "1",
+                    "locale": "en",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_7bdfd"
+                    }
+                    );
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+
+            <div>
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div id="tradingview_7bdfd"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                    <script type="text/javascript">
+                    new TradingView.widget(
+                    {
+                    "width": 888,
+                    "height": 610,
+                    "symbol": "BINANCE:ETHBUSD",
+                    "interval": "240",
+                    "timezone": "Europe/Berlin",
+                    "theme": "dark",
+                    "style": "1",
+                    "locale": "en",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_d4e34"
+                    }
+                    );
                     </script>
                 </div>
                 <!-- TradingView Widget END -->
